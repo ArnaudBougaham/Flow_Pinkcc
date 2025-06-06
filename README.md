@@ -1,6 +1,6 @@
 # Medical Image Segmentation Lab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Flow_Pinkcc/blob/main/teacher_version.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Flow_Pinkcc/main/teacher_version.ipynb)
 
 ## Overview
 This lab focuses on medical image segmentation using CT scans. You will learn and implement best practices in medical image analysis, including:
