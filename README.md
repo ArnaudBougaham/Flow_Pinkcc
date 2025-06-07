@@ -1,56 +1,69 @@
-# Medical Image Segmentation Lab
+# Ovarian Cancer Segmentation Lab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ArnaudBougaham/Flow_Pinkcc/blob/main/Ovarian_Segmentation_Teacher.ipynb)
+## 👋 Welcome!
+This lab introduces you to medical image segmentation using CT volumes and segmentation masks for ovarian cancer detection. You will work with real medical data, prepare volumetric images, build a U-Net model, and interpret the results.
 
-## Overview
-This lab focuses on medical image segmentation using CT scans. You will learn and implement best practices in medical image analysis, including:
-- Exploratory Data Analysis (EDA)
-- Data preprocessing and augmentation
-- Train/Validation/Test splitting
-- K-Fold Cross Validation
-- Implementation of a U-Net architecture for 2D segmentation
-- Model evaluation and visualization
+## 📁 Project Structure
 
-## Dataset
-The dataset consists of CT scans and their corresponding segmentation masks. The data is organized as follows:
-- `Data/CT/`: Contains the CT scan images
-- `Data/Segmentation/`: Contains the corresponding segmentation masks
+- `OvarianCancerSegmentation.ipynb`: Main lab notebook
+- `Data_Subsample.zip`: Dataset (to be downloaded via the notebook)
 
-## Lab Structure
-The lab is designed to be completed in 3 hours. You will work with a Google Colab notebook that contains:
-1. Data loading and exploration
-2. Data preprocessing and augmentation
-3. Model implementation
-4. Training and evaluation
-5. Results visualization
+## 🚀 Getting Started
 
-## Prerequisites
-- Basic knowledge of Python
-- Understanding of deep learning concepts
-- Familiarity with PyTorch (basic level)
+1. Open the notebook in Google Colab:
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ArnaudBougaham/Flow_Pinkcc/blob/main/Ovarian_Segmentation_Teacher.ipynb)
 
-## Getting Started
-1. Click the "Open in Colab" badge above to open the student notebook
-2. Follow the instructions in the notebook
-3. Complete the marked sections (look for `# TODO` comments)
-4. Run the cells in sequence
+2. Follow the instructions to download and extract the data
+3. Run the cells in order, answer the questions, and interpret the results
 
-## Learning Objectives
-- Understand medical image data structure and preprocessing
-- Implement proper data splitting and cross-validation
-- Build and train a U-Net model for segmentation
-- Evaluate model performance using appropriate metrics
-- Visualize and interpret results
+## 🎯 Learning Objectives
+- Understand volumetric medical data structure (NIfTI format)
+- Perform exploratory data analysis on medical images
+- Prepare and preprocess volumetric data for segmentation
+- Implement and train a simple U-Net architecture
+- Evaluate segmentation results and interpret medical outcomes
 
-## Time Management
-- Data exploration and preprocessing: 45 minutes
-- Model implementation and training: 1.5 hours
-- Evaluation and visualization: 45 minutes
+## 📊 Dataset Description
+The dataset consists of:
+- CT (Computed Tomography) volumes
+- Segmentation masks with 3 classes:
+  - Class 0: Background
+  - Class 1: Primary ovarian cancer
+  - Class 2: Metastasis
 
-## Note
-This lab uses a subset of the full dataset to ensure it can be processed within Google Colab's memory constraints. The data has been preprocessed to work with 2D slices and includes class balancing techniques.
+## 📋 Lab Structure
+1. **Setup & Data Preparation**
+   - Environment setup
+   - Data download and extraction
+   - Initial data exploration
 
-## Resources
-- [U-Net Paper](https://arxiv.org/abs/1505.04597)
-- [PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
-- [Medical Image Segmentation Tutorial](https://www.kaggle.com/code/iezepov/fast-ai-2018-lesson-3-notes) 
+2. **Exploratory Data Analysis**
+   - Volume visualization
+   - Class distribution analysis
+   - Medical image characteristics
+
+3. **Data Preprocessing**
+   - Volume normalization
+   - Data augmentation
+   - Mask encoding
+
+4. **Model Development**
+   - U-Net architecture implementation
+   - Loss function selection
+   - Training pipeline setup
+
+5. **Training & Evaluation**
+   - Model training
+   - Performance metrics
+   - Results visualization
+
+6. **Interpretation**
+   - Medical significance
+   - Model limitations
+   - Potential improvements
+
+## 💡 Tips for Success
+- Pay attention to data normalization techniques
+- Consider class imbalance in medical data
+- Focus on both quantitative metrics and qualitative analysis
+- Document your observations and medical interpretations 
